@@ -64,7 +64,6 @@ class CarPositionTest {
 
     @ParameterizedTest(name = "자동차 위치가 1씩 증가하는지 확인한다. [증가 횟수 : {0}]")
     @MethodSource("someZeroOrPositiveIntegerStream")
-    @DisplayName("자동차 위치가 1씩 증가하는지 확인한다.")
     void increaseTest(int count) {
         // given
         CarPosition carPosition = CarPosition.init();
